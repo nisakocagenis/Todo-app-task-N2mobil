@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.v-overlay {
+  --v-overlay-opacity: 0px !important;
+}
+.v-overlay__scrim {
+  backdrop-filter: blur(3px) !important;
+  background-color: rgba(0, 0, 0, 0.167) !important;
+}
