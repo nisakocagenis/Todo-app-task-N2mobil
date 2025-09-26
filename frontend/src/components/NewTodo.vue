@@ -15,7 +15,7 @@
         <v-form ref="form" lazy-validation>
           <v-text-field
             v-model="newTodo"
-            placeholder="Enter your new posts title..."
+            label="Enter your new posts title..."
             @keydown.enter="addTodo"
             variant="outlined"
             density="compact"

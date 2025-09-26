@@ -26,8 +26,6 @@ def new_photo(request, album_id=None):
         data = request.data.copy()
         photo = data.get('photo')
 
-        if not album_id:
-            return Response({"error": "Album ID is required"}, status=400)
 
         data['album'] = album_id  # Albüm ID'sini ilişkilendir
         data['title'] = photo.name
@@ -47,3 +45,25 @@ def new_photo(request, album_id=None):
         photos = Photo.objects.filter(album_id=album_id)  # sadece bu albüme ait fotoğraflar
         serializer = PhotoSerializer(photos, many=True)
         return Response(serializer.data)
+
+
+@api_view(['GET', 'POST'])
+def new_album(request):
+    user = request.user
+    
+    data =request.data
+    if request.method == 'POST':
+
+        data['user'] = user.id  
+        serializer = AlbumSerializer(data=data)
+
+        if serializer.is_valid():
+            serializer.save(user=user)  
+            return Response(serializer.data, status=201)
+
+        return Response(serializer.errors, status=400)
+
+    elif request.method == 'GET':
+        albums = Album.objects.filter(user=user)  
+        serializer = AlbumSerializer(albums, many=True)
+        return Response(serializer.data, status=200)

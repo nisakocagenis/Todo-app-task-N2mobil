@@ -27,7 +27,7 @@
 
           <v-textarea
             v-model="newPostBody"
-            placeholder="Enter your paragraph here..."
+            label="Enter your paragraph here..."
             rows="3"
             density="compact"
             variant="outlined"

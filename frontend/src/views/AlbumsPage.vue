@@ -7,7 +7,7 @@
           <v-btn class="rounded-xl bg-[#4F359B]" @click="openModal">
             + New Album
           </v-btn>
-          <new-todo ref="newTodoRef" @refresh="initial" />
+          <new-album ref="NewAlbumRef" @refresh="initial" />
         </v-col>
       </header>
 
@@ -26,24 +26,33 @@
 import axios from "axios";
 import albumsCard from "../components/albumsCard.vue";
 import NavigationDrawer from "../components/NavigationDrawer.vue";
-
+import NewAlbum from "../components/NewAlbum.vue";
 export default {
   data() {
     return {
       itemsList: [],
     };
   },
-  components: { NavigationDrawer, albumsCard },
+  components: { NavigationDrawer, albumsCard, NewAlbum },
 
   mounted() {
-    axios
-      .get(`http://127.0.0.1:8000/api/album/album_list/`)
-      .then((response) => {
-        this.itemsList = response.data;
-      })
-      .catch((error) => {
-        console.error("Veri alınırken hata oluştu:", error);
-      });
+    this.initial();
+  },
+
+  methods: {
+    initial() {
+      axios
+        .get(`http://127.0.0.1:8000/api/album/album_list/`)
+        .then((response) => {
+          this.itemsList = response.data;
+        })
+        .catch((error) => {
+          console.error("Veri alınırken hata oluştu:", error);
+        });
+    },
+    openModal() {
+      this.$refs.NewAlbumRef.openModal();
+    },
   },
 };
 </script>
