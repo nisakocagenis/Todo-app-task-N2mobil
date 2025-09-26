@@ -26,8 +26,11 @@ Kullanıcıların yeni postlar oluşturabileceği ve mevcut postları görüntü
 
 🖼️ Albüm Sayfası
 
-Fotoğraf yükleme, albüm oluşturma ve albümleri görüntüleme alanı.
+Fotoğraf yükleme, albüm oluşturma , albümleri görüntüleme ve yeni albüm , fotoğraf ekleme alanı.
 <img width="1467" height="830" alt="Ekran Resmi 2025-09-26 16 10 13" src="https://github.com/user-attachments/assets/0558f11c-4341-4344-8606-b4d77b83424a" />
+<img width="1466" height="821" alt="Ekran Resmi 2025-09-26 16 16 24" src="https://github.com/user-attachments/assets/de90d164-31a7-48f8-be54-9ddb9cb06973" />
+
+
 
 🛠️ Teknolojiler
 
