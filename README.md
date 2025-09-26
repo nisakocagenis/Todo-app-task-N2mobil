@@ -6,6 +6,12 @@ Modern bir arayüz ile Vue.js ve Django REST API kullanılarak geliştirilmişti
 Kullanıcıların güvenli bir şekilde giriş yapabileceği login ekranı.
 <img width="1454" height="816" alt="Ekran Resmi 2025-09-26 16 09 02" src="https://github.com/user-attachments/assets/acf0f47e-6273-4cde-b555-63ad43d59053" />
 
+👤 Profil Sayfası
+
+Kullanıcının kendi kişisel bilgilerini görebileceği ve düzenleyebileceği sayfa.
+<img width="1101" height="653" alt="Ekran Resmi 2025-09-26 16 15 07" src="https://github.com/user-attachments/assets/c83f4f2d-3b43-41fc-b0c7-8f03afc33e4f" />
+
+
 ✅ Todo Sayfası
 
 Yapılacaklarınızı ekleyip, düzenleyip ve tamamlandı olarak işaretleyebileceğiniz sayfa.
@@ -15,6 +21,8 @@ Yapılacaklarınızı ekleyip, düzenleyip ve tamamlandı olarak işaretleyebile
 
 Kullanıcıların yeni postlar oluşturabileceği ve mevcut postları görüntüleyebileceği sayfa.
 <img width="1455" height="805" alt="Ekran Resmi 2025-09-26 16 09 40" src="https://github.com/user-attachments/assets/a02a7928-0c38-4754-b5ea-cd1839257638" />
+<img width="1469" height="827" alt="Ekran Resmi 2025-09-26 16 09 49" src="https://github.com/user-attachments/assets/f2d091d4-44bd-4342-b735-8c7ca9cf4119" />
+
 
 🖼️ Albüm Sayfası
 
